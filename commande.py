@@ -4,11 +4,11 @@ import RPi.GPIO as GPIO
 
 # Deux parties dans ce fichier :
 
-# - la classe commande s'occupe d'allumer ou éteinde le relais en 
-# fonction de la température de consigne 
+# - la classe commande s'occupe d'allumer ou eteinde le relais en 
+# fonction de la temperature de consigne 
 
 # - la calsse consigne s'occupe de lire le fichier consigne_chocolat.txt
-# et de mettre à jour la consigne au fure et à mesure que le temps passe
+# et de mettre a jour la consigne au fure et à mesure que le temps passe
 
 
 OFF = 'OFF!'

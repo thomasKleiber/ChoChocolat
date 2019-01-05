@@ -6,7 +6,7 @@ import signal
 import mesure
 import commande
 
-# description de la fenêtre dans laquelle il y a le graphique
+# description de la fenetre dans laquelle il y a le graphique
 cmd = commande.consigne()
 app = QtGui.QApplication([])
 mw = QtGui.QMainWindow()
@@ -32,11 +32,11 @@ yd=[]
 t=0
 cmd_ctr = 0
 
-# fonction appelée périodiquement pour :
+# fonction appelee periodiquement pour :
 # - mesurer  chaque coup
 # - puis une fois sur 5:
-#   - met à jour la commande du relais
-#   - met à jour le graphe
+#   - met a jour la commande du relais
+#   - met a jour le graphe
 def updateData():
     global xd, yd, t, cmd, cmd_ctr
     mes = mesure.get()
@@ -50,7 +50,7 @@ def updateData():
         p1.setData(y=yd, x=xd)
     t += timer_period_s
 
-# timer = bout de code qui s'exécute périodiquement
+# timer = bout de code qui s'execute periodiquement
 timer_period_s = .05
 timer = QtCore.QTimer()
 timer.timeout.connect(updateData)

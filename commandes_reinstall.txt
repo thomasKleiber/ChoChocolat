@@ -1,0 +1,8 @@
+git clone https://github.com/thomasKleiber/ChoChocolat.git
+cd ChoChocolat/
+sudo apt-get install qt5-default
+sudo pip3 install pyqtgraph
+sudo apt-get install python3-pyqt5
+echo -e '## tps;temp ## à compléter!\n123;123\n123;123' > /home/pi/Desktop/consigne_chocolat.txt
+echo -e '#!/bin/bash\ncd ~/ChoChocolat/; python3 GUI.py' > /home/pi/Desktop/run.sh
+chmod +x /home/pi/Desktop/run.sh 

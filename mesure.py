@@ -1,8 +1,8 @@
 import numpy as np
 from max31855 import MAX31855
 
-# Ce fichier transforme la donnée brute (sortie de capteur) en 
-# mesure un peu filtrée. 
+# Ce fichier transforme la donnee brute (sortie de capteur) en 
+# mesure un peu filtree. 
 
 
 clk_pin=13
@@ -15,7 +15,7 @@ FW = 5
 raw = np.ones(FW) * th.get()
 raw_idx = 0
 
-# filtre = médiane des 5 dernières valeurs
+# filtre = mediane des 5 dernieres valeurs
 def get():
     global raw_idx, FW, th
     raw[raw_idx] = th.get()

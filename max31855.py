@@ -1,7 +1,8 @@
 #!/usr/bin/python
 import RPi.GPIO as GPIO
 
-# ce fichier est l'interface avec le thermocouple, je l'ai trouvé 
+
+# ce fichier est l'interface avec le thermocouple, je l'ai trouve
 # quelque part sur internet
 
 class MAX31855(object):
